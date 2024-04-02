@@ -3,27 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+    <link rel="stylesheet" href="style/gallery.css">
 </head>
 <body>
-    <header>
-        <h1>Gallery</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="gallery.html">Gallery</a> |
-            <a href="blog.html">Blog</a> |
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+    <nav>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="">
+                    <span class="hizkia">Hizkia</span> 
+                    <span class="pappang">Pappang</span>
+                </a>
+            </div>
+            
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html" class="menu-link">Home</a></li>
+                    <li><a href="gallery.html" class="menu-link">Gallery</a></li>
+                    <li><a href="blog.html" class="menu-link">Blog</a></li>
+                    <li><a href="contact.html" class="menu-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     
-    <section>
-        <h2>Galeri saya</h2>
-        <h2>Foto 1</h2>
-        <img src="download2.jpeg" alt="foto 1">
-        <h2>Foto 2</h2>
-        <img src="download3.jpeg" alt="foto 2">
-        <h2>Foto 3</h2>
-        <img src="download4.jpeg" alt="foto 3">
+    <section id="gallery-section">
+        <h2>Gallery Saya</h2>
+        <div class="gallery-item">
+            <img src="download2.jpeg" alt="Foto 1">
+        </div>
+        <div class="gallery-item">
+            <img src="download3.jpeg" alt="Foto 2">
+        </div>
+        <div class="gallery-item">
+            <img src="download4.jpeg" alt="Foto 3">
+        </div>
     </section>
 </body>
 </html>
