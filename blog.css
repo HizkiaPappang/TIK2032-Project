@@ -1,0 +1,113 @@
+.logo a {
+    letter-spacing: -1px; 
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lora';
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    font-family: 'Lora';
+}
+
+.hizkia {
+    color: rgb(39, 39, 236);  
+}
+
+.pappang {
+    color: rgb(237, 111, 111);
+    font-size: 80%;  
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: #056c8e;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.menu-link {
+    font-size: 18px;  
+    transition: font-size 0.3s ease; 
+}
+
+.menu-link:hover {
+    font-size: 22px; 
+}
+
+
+
+#content {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+#content article {
+    width: 50%; 
+    box-sizing: border-box;
+    padding: 10px; 
+    margin-bottom: -50px;
+}
+#content img.featured-image {
+    width: auto;
+    height: 40%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    object-position: center;
+    border-radius: 5px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(133, 203, 182);
+}
