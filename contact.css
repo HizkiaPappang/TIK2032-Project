@@ -1,47 +1,160 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+.logo a {
+    letter-spacing: -1px; 
+}
 
-    <body>
-        <header>
-            <nav>
-                <div class="wrapper">
-                    <div class="logo">
-                        <a href="">
-                            <span class="hizkia">Hizkia</span> 
-                            <span class="pappang">Pappang</span>
-                        </a>
-                    </div>
-                    
-                    <div class="menu">
-                        <ul>
-                            <li><a href="index.html" class="menu-link">Home</a></li>
-                            <li><a href="gallery.html" class="menu-link">Gallery</a></li>
-                            <li><a href="blog.html" class="menu-link">Blog</a></li>
-                            <li><a href="contact.html" class="menu-link">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>  
-        </header>
-    </header>
-    <div class="contact-card">
-        <h1>Hubungi Saya Di:</h1>
-        <section>
-            <p><a href="mailto:hiskiapappang@gmail.com"><i class="fas fa-envelope"></i> Email: hiskiapappang@gmail.com</a></p>
-            <p><a href="tel:+6282311947403"><i class="fas fa-phone"></i> No.HP/WA: +6282311947403</a></p>
-            <p><a href="https://www.google.com/maps/place/Manado" target="_blank"><i class="fas fa-map-marked-alt"></i> Alamat: Manado</a></p>
-            <p><a href="https://www.instagram.com/hizkia_0_0_/" target="_blank"><i class="fab fa-instagram"></i> IG: hizkia_0_0_</a></p>
-            <p><a href="https://www.facebook.com/hizkiapappang" target="_blank"><i class="fab fa-facebook"></i> Facebook: Hizkia Pappang</a></p>
-        </section>
-    </div>
-   
-    
-<div>
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lora';
+}
 
-</body>
-</html>
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    font-family: 'Lora';
+}
+
+.hizkia {
+    color: rgb(39, 39, 236);  
+}
+
+.pappang {
+    color: rgb(237, 111, 111);
+    font-size: 80%;  
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: #056c8e;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.menu-link {
+    font-size: 18px;  
+    transition: font-size 0.3s ease; 
+}
+
+.menu-link:hover {
+    font-size: 22px; 
+}
+.contact-card {
+    border: 1px solid #a08787;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+
+}
+
+.contact-card h1 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-card p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.contact-card a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+body {
+    background-image: url(download10.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-attachment: fixed; 
+    opacity: 100;
+}
+
+
+.contact-card h1 {
+    color: #000; 
+    text-shadow: 
+        -1px -1px 0 #fff,  
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff; 
+}
+
+
+.contact-card p {
+    color: #000; 
+    text-shadow: 
+        -1px -1px 0 #fff,  
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff; 
+}
+
+
+.contact-card a {
+    color: #000; 
+    text-shadow: 
+        -1px -1px 0 #fff,  
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff; 
+}
+
+
+.contact-card a:hover {
+    color: #000; 
+    text-shadow: 
+        -1px -1px 0 #fff,  
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff; 
+}
+
