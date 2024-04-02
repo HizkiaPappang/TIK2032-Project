@@ -1,32 +1,52 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/blog.css">
+</head>
 <body>
     <header>
-        <h1>Blog</h1>
         <nav>
-            <a href="index.html">Home</a> |
-            <a href="gallery.html">Gallery</a> |
-            <a href="blog.html">Blog</a> |
-            <a href="contact.html">Contact</a>
-        </nav>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="">
+                        <span class="hizkia">Hizkia</span> 
+                        <span class="pappang">Pappang</span>
+                    </a>
+                </div>
+                
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html" class="menu-link">Home</a></li>
+                        <li><a href="gallery.html" class="menu-link">Gallery</a></li>
+                        <li><a href="blog.html" class="menu-link">Blog</a></li>
+                        <li><a href="contact.html" class="menu-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>  
     </header>
-    
-    <article>
-        <h2>Artikel 1</h2>
-        <img src="download2.jpeg" class="featured-image">
-        <p>Argentina menjadi juara Piala Dunia 2022 usai menumbangkan juara bertahan Prancis dalam adu penalti (4-2) di Stadion Lusail, Qatar, Minggu, 18 Desember 2022.</p>
-    </article>
-
-    <article>
-        <h2>Artikel 2</h2>
-        <img src="download3.jpeg" class="featured-image">
-        <p>Portugal tersingkir dari Piala Dunia 2022 Qatar setelah takluk 0-1 pada perempat final kontra Maroko yang berlangsung di Stadion Al Thumama, Doha, Sabtu (10/12/2022) malam WIB.</p>
-    </article>
-
-    <article>
-        <h2>Artikel 3</h2>
-        <img src="download4.jpeg" class="featured-image">
-        <p>Timnas Indonesia lepas dari status juru kunci Grup F Kualifikasi Piala Dunia 2026 Zona Asia setelah meraih kemenangan atas Vietnam. </p>
-    </article>
-
+    <main>
+        <div id='content'>
+            <article class="card">
+                <h2>Artikel 1</h2>
+                <img src="download2.jpeg" class="featured-image">
+                <p>Argentina menjadi juara Piala Dunia 2022 usai menumbangkan juara bertahan Prancis dalam adu penalti (4-2) di Stadion Lusail, Qatar, Minggu, 18 Desember 2022.</p>
+            </article>
+            
+            <article class="card">
+                <h2>Artikel 2</h2>
+                <img src="download3.jpeg" class="featured-image">
+                <p>Portugal tersingkir dari Piala Dunia 2022 Qatar setelah takluk 0-1 pada perempat final kontra Maroko yang berlangsung di Stadion Al Thumama, Doha, Sabtu (10/12/2022) malam WIB.</p>
+            </article>
+        
+            <article class="card">
+                <h2>Artikel 3</h2>
+                <img src="download4.jpeg" class="featured-image">
+                <p>Timnas Indonesia lepas dari status juru kunci Grup F Kualifikasi Piala Dunia 2026 Zona Asia setelah meraih kemenangan atas Vietnam. </p>
+            </article>
+        
+    </main>
 </body>
 </html>
