@@ -136,3 +136,18 @@ footer {
     text-align: center;
     font-weight: bold;
 }
+.animated-text span {
+    display: block; /* Membuat setiap span menjadi blok, sehingga muncul di baris baru */
+}
+
+.animated-text .line1 {
+    font-size: 24px;
+}
+
+.animated-text .line2 {
+    font-size: 30px;
+}
+
+.animated-text .line3 {
+    font-size: 36px;
+}
