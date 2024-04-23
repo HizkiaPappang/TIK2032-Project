@@ -1,111 +1,41 @@
-.logo a {
-    letter-spacing: -1px; 
+var images = document.querySelectorAll('.gallery-item img');
+var zoomedImage = null;
+
+function zoomImage(event) {
+    var element = event.target;
+    if (zoomedImage && zoomedImage !== element) {
+        zoomedImage.style.transform = '';
+        zoomedImage.style.zIndex = '0';
+    }
+    if (element.style.transform === 'scale(1.5)') {
+        element.style.transform = '';
+        element.style.zIndex = '0';
+        zoomedImage = null;
+    } else {
+        element.style.transform = 'scale(1.5)';
+        element.style.zIndex = '1000';
+        zoomedImage = element;
+    }
 }
 
-body {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Lora';
+// Fungsi untuk efek hover
+function hoverImage(event) {
+    var element = event.target;
+    if (element !== zoomedImage) {
+        element.style.transform = 'scale(1.1)';
+    }
 }
 
-.wrapper {
-    width: 1100px;
-    margin: auto;
-    position: relative;
+function unhoverImage(event) {
+    var element = event.target;
+    if (element !== zoomedImage) {
+        element.style.transform = '';
+    }
 }
 
-.logo a {
-    font-size: 30px;
-    font-weight: bold;
-    float: left;
-    font-family: 'Lora';
+// Tambahkan event listener ke setiap gambar
+for (var i = 0; i < images.length; i++) {
+    images[i].addEventListener('click', zoomImage);
+    images[i].addEventListener('mouseover', hoverImage);
+    images[i].addEventListener('mouseout', unhoverImage);
 }
-
-.hizkia {
-    color: rgb(39, 39, 236);  
-}
-
-.pappang {
-    color: rgb(237, 111, 111);
-    font-size: 80%;  
-}
-
-.menu {
-    float: right;
-}
-
-nav {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
-    line-height: 80px;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    background: white;
-    z-index: 1;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-nav ul li {
-    float: left;
-}
-
-nav ul li a {
-    color: #056c8e;
-    font-weight: bold;
-    text-align: center;
-    padding: 0px 16px 0px 16px;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-.menu-link {
-    font-size: 18px;  
-    transition: font-size 0.3s ease; 
-}
-
-.menu-link:hover {
-    font-size: 22px; 
-}
-
-#gallery-section h2 {
-    margin-bottom: 0px; 
-}
-
-#gallery-section {
-    overflow: auto;
-}
-
-.gallery-item {
-    display: inline-block;
-    margin-right: 20px;
-    vertical-align: top; 
-}
-
-.gallery-item img {
-    width: 200px; 
-    height: 200px; 
-    object-fit: cover; 
-    margin-bottom: 10px; 
-}
-h2 {
-    font-family:'comic sans-ms';
-    font-weight: 800;
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: #056c8e;
-    width: 100%;}
-
-    
